@@ -1,5 +1,6 @@
 import Typeanimation from "@/app/components/Typeanimation";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -20,28 +21,29 @@ export default function Hero() {
           {/* styling elements */}
 
           <h1 className="text-[70px] text-center font-bold capitalize font-sans">
-            Innovating the Future with <br />{" "}
+            Innovating the Future with <br />
             <span className=" inline-block ">
-              {" "}
-              <Typeanimation />{" "}
-            </span>{" "}
+              <Typeanimation />
+            </span>
             Software Solutions
           </h1>
           <p className="text-[19px] mt-5 font-mono capitalize text-center max-w-[85%]">
             At Ruduo Technologies, we bring your ideas to life with innovative
-            software solutions tailored to your unique needs.{" "}
+            software solutions tailored to your unique needs.
           </p>
         </div>
         <div className=" mt-5 flex justify-center items-center flex-col ">
           <p className="text-[#A880FF] text-center font-serif">
             For Contact us Click here
           </p>
-          <button
-            className="w-[260px] h-[54px] bg-[#A980FE]  text-[18px] tracking-[1px] mt-3  font-sans text-white rounded-[10px]
+          <Link href="/contact">
+            <button
+              className="w-[260px] h-[54px] bg-[#A980FE]  text-[18px] tracking-[1px] mt-3  font-sans text-white rounded-[10px]
                     "
-          >
-            Get Started Today
-          </button>
+            >
+              Get Started Today
+            </button>
+          </Link>
         </div>
       </div>
       {/* hero page */}
@@ -155,7 +157,7 @@ export default function Hero() {
       <div className="h-[60vh] w-full  mt-[50px] flex justify-between items-center px-[100px]">
         <div className=" w-full h-full flex justify-center flex-col">
           <h1 className="text-[45px] ">
-            Try our Product we have a <br /> high quality software with full{" "}
+            Try our Product we have a <br /> high quality software with full
             <br />
             time support
           </h1>

@@ -7,10 +7,10 @@ export default function navlinks() {
       sublinks: [
         {
           sublink: [
-            { name: "cooperate profile", link: "/" },
-            { name: "new and events", link: "/" },
-            { name: "blog", link: "/" },
-            { name: "career", link: "/about/career" },
+            { name: "cooperate profile", link: "/about" },
+            { name: "new and events", link: "/about" },
+            { name: "blog", link: "/about" },
+            { name: "career", link: "/about" },
           ],
         },
       ],
@@ -21,17 +21,17 @@ export default function navlinks() {
       sublinks: [
         {
           sublink: [
-            { name: "workflow Engine", link: "/" },
-            { name: "rule engine", link: "/" },
-            { name: "amortization engine", link: "/" },
-            { name: "report designer", link: "/" },
-            { name: "letter designer", link: "/" },
-            { name: "bug tracker", link: "/" },
-            { name: "screen designer", link: "/" },
-            { name: "document management", link: "/" },
-            { name: "job designer", link: "/" },
-            { name: "external api connecter", link: "/" },
-            { name: "Aunthentication and authorization", link: "/" },
+            { name: "workflow Engine", link: "/about" },
+            { name: "rule engine", link: "/about" },
+            { name: "amortization engine", link: "/about" },
+            { name: "report designer", link: "/about" },
+            { name: "letter designer", link: "/about" },
+            { name: "bug tracker", link: "/about" },
+            { name: "screen designer", link: "/about" },
+            { name: "document management", link: "/about" },
+            { name: "job designer", link: "/about" },
+            { name: "external api connecter", link: "/about" },
+            { name: "Aunthentication and authorization", link: "/about" },
           ],
         },
       ],
@@ -42,9 +42,9 @@ export default function navlinks() {
       sublinks: [
         {
           sublink: [
-            { name: "financial service", link: "/" },
-            { name: "human resiurces", link: "/" },
-            { name: "manufacturing", link: "/" },
+            { name: "financial service", link: "/about" },
+            { name: "human resiurces", link: "/about" },
+            { name: "manufacturing", link: "/about" },
           ],
         },
       ],
@@ -74,7 +74,7 @@ export default function navlinks() {
                           <li>
                             <Link
                               href={slink.link}
-                              className=" hover:underline duration-150 "
+                              className=" hover:text-black duration-150 "
                             >
                               {" "}
                               {slink.name}

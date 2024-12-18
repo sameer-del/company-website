@@ -23,23 +23,41 @@ export default function Footer() {
         <div className=" w-full flex flex-col  justify-center pl-[100px] ">
           <h1 className=" uppercase font-bold text-[25px] mb-5">About</h1>
           <ul>
-            <li className="py-1"> New to Ruduo?</li>
-            <li className="py-1"> Why Ruduo</li>
-            <li className="py-1">Explore All Products</li>
-            <li className="py-1">Saas</li>
-            <li className="py-1">Customer Success</li>
+            <li className="py-1">
+              <Link href="/about/career">New to Ruduo?</Link>
+            </li>
+            <li className="py-1">
+              <Link href="/about/career">Why Ruduo</Link>
+            </li>
+            <li className="py-1">
+              <Link href="/about/career">Explore All Products</Link>
+            </li>
+            <li className="py-1">
+              <Link href="/about/career">Saas</Link>
+            </li>
+            <li className="py-1">
+              <Link href="/about/career">Customer Success</Link>
+            </li>
           </ul>
         </div>
         <div className=" w-full flex flex-col  justify-center pl-[100px] ">
           <h1 className=" uppercase font-bold text-[25px] mb-5">company</h1>
           <ul>
-            <li className="py-1"> About Ruduo</li>
-            <li className="py-1"> Our Story</li>
+            <li className="py-1">
+              <Link href="/about/career">About Ruduo</Link>
+            </li>
+            <li className="py-1">
+              <Link href="/about/career">Our Story</Link>
+            </li>
             <li className="py-1">
               <Link href="/about/career">career</Link>
             </li>
-            <li className="py-1">Security and Performance</li>
-            <li className="py-1">Give your feedback </li>
+            <li className="py-1">
+              <Link href="/about/career">Security and Performance</Link>
+            </li>
+            <li className="py-1">
+              <Link href="/about/career">Give your feedback</Link>
+            </li>
           </ul>
         </div>
       </div>
