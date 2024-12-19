@@ -20,12 +20,12 @@ export default function Hero() {
           </div>
           {/* styling elements */}
 
-          <h1 className="lg:text-[70px] text-[40px]  text-center font-bold capitalize font-sans">
+          <h1 className="lg:text-[70px] text-[40px] px-2  text-center font-bold capitalize font-sans">
             Innovating the Future with <br />
-            <span className=" inline-block ">
+            <span className=" inline-block text-[40px] lg:text-[70px] ">
               <Typeanimation />
+              Software Solutions
             </span>
-            Software Solutions
           </h1>
           <p className="text-[19px] mt-5 font-mono capitalize text-center  lg:max-w-[85%]">
             At Ruduo Technologies, we bring your ideas to life with innovative

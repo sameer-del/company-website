@@ -7,7 +7,7 @@ const Typeanimation: React.FC = () => {
   const typedStrings = ["Impactful", "focused", "efficient"];
 
   return (
-    <div style={{ fontSize: "36px", fontWeight: "bold", color: "#A880FF" }}>
+    <div style={{ fontWeight: "bold", color: "#A880FF" }}>
       <ReactTyped
         strings={typedStrings} // Using the constant array
         typeSpeed={40}
