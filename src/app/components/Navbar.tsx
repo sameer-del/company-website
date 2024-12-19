@@ -37,7 +37,7 @@ export default function Navbar() {
                 {/* mobile menu */}
 
                 <ul
-                  className={` md:hidden absolute  w-full h-full bg-[#A980FE] bottom-0 right-0 z-10 py-24 pl-4 pt-[200px] duration-500 ${open ? "left-0" : "left-[-100%]"}`}
+                  className={` md:hidden absolute  w-full h-[110vh] bg-[#A980FE] top-0 right-0 z-10 py-24 pl-4 pt-[200px] duration-500 ${open ? "left-0" : "left-[-100%]"}`}
                 >
                   <li className="py-7 px-3 inline-block">
                     <Link

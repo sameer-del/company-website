@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { useState } from "react";
 export default function navlinks() {
+  const [heading, setHeading] = useState("");
   const links = [
     {
       name: "about",
@@ -58,12 +60,16 @@ export default function navlinks() {
             <h1
               className="py-7  uppercase font-semibold text-white sm:text-black cursor-pointer"
               key={link.name}
+              onClick={() =>
+                heading !== link.name ? setHeading(link.name) : setHeading("")
+              }
             >
               {link.name}
             </h1>
+
             {link.submenu && (
               <div>
-                <div className="absolute top-[6rem] z-10 hidden group-hover:block hover:block ">
+                <div className="absolute top-[6rem] z-10 hidden group-hover:md:block hover:md:block ">
                   <div className="py-3">
                     <div className="w-4 h-4 left-[2.0rem] absolute mt-1 bg-[#A980FE]  rotate-45"></div>
                   </div>
@@ -76,7 +82,6 @@ export default function navlinks() {
                               href={slink.link}
                               className=" hover:text-black duration-150 "
                             >
-                              {" "}
                               {slink.name}
                             </Link>
                           </li>
@@ -87,9 +92,28 @@ export default function navlinks() {
                 </div>
               </div>
             )}
+            {/* mobile menu */}
+            <div
+              className={`${heading === link.name ? "md:hidden" : "hidden"}`}
+            >
+              {link.sublinks.map((slinks) => (
+                <div>
+                  <div>
+                    {slinks.sublink.map((slink) => (
+                      <li className="sm:hidden py-1 pl-5">
+                        <Link href={slink.link}>{slink.name}</Link>
+                      </li>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       ))}
     </>
   );
+}
+function usestate(arg0: string): [any, any] {
+  throw new Error("Function not implemented.");
 }
