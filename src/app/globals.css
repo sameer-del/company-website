@@ -23,3 +23,19 @@ body {
   background-size: cover;
   background-position: center top;
 }
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/about-banner.png");
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(50%);
+}
+.button {
+  width: 250px;
+  height: 54px;
+  background-color: #a980fe;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: white;
+  border-radius: 10px;
+}
