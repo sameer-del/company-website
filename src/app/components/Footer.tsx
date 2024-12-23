@@ -61,8 +61,8 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="pt-2 border-t-2"></div>
-      <div className="bg-[#a880ff] py-0">
+      <div className=" border-t-2"></div>
+      <div className="bg-primary py-0">
         <p className="text-center tetx-white">
           @2024 designed and developed by ruduotech
         </p>

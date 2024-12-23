@@ -51,17 +51,10 @@ export default function aboutPage() {
       <Navbar />
       {/* navbar */}
       {/* intro */}
-      <div className="about w-full h-[50vh]  flex justify-center items-center flex-col gap-9 text-white">
-        <h1 className="text-[45px] uppercase font-semibold font-serif ">
+      <div className="about w-full h-[50vh]  flex justify-center items-center flex-col gap-9 ">
+        <h1 className="text-[45px] uppercase font-semibold font-serif text-white ">
           about us
         </h1>
-        <p className="text-center  max-w-[45%]">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
-          nostrum natus, quae, cupiditate distinctio vero assumenda optio
-          incidunt aliquid nulla minima asperiores, praesentium quibusdam iste
-          tenetur illum deleniti accusamus enim.
-        </p>
-        <button>view more</button>
       </div>
 
       {/* intro */}
@@ -129,7 +122,7 @@ export default function aboutPage() {
       <div className="w-full h-[60vh] ">
         <div className=" h-full  flex justify-center items-center gap-10">
           {card.map((cards) => (
-            <div className="h-[60%] w-[400px]  flex justify-center items-center flex-col rounded-[15px] rounded-l-none rounded-t-[15px]  bg-[#A980FE] text-white">
+            <div className="h-[60%] w-[400px]  flex justify-center items-center flex-col rounded-[15px] rounded-l-none rounded-t-[15px]  bg-primary text-white">
               <Image
                 src={cards.imageUrl}
                 width={80}
@@ -156,7 +149,7 @@ export default function aboutPage() {
           </h1>
           <div className=" h-full  flex justify-center items-center gap-10">
             {blog.map((blogs) => (
-              <div className="  w-full h-[90vh]  flex justify-center items-center flex-col rounded-[15px] rounded-l-none rounded-t-[15px] px-5 py-[50px]  bg-[#A980FE] text-white ">
+              <div className="  w-full h-[90vh]  flex justify-center items-center flex-col rounded-[15px] rounded-l-none rounded-t-[15px] px-5 py-[50px]  bg-primary text-white ">
                 <div className="w-full  bg-cover py-2 ">
                   <img
                     src={blogs.imageUrl}
@@ -178,7 +171,7 @@ export default function aboutPage() {
       </section>
       {/* blog component */}
       {/* contac */}
-      <div className="px-12 pt-10 pb-16 mt-20 max-w-full bg-blue-50 w-[1278px] max-md:px-5 max-md:mt-10">
+      {/* <div className="px-12 pt-10 pb-16 mt-20 max-w-full bg-blue-50 w-[1278px] max-md:px-5 max-md:mt-10">
         <div className="flex gap-5 max-md:flex-col">
           <div className="flex flex-col w-1/5 max-md:ml-0 max-md:w-full">
             <div className="flex shrink-0 mx-auto mt-6 bg-blue-100 rounded-full aspect-square h-[200px] w-[200px] max-md:mt-10" />
@@ -190,7 +183,7 @@ export default function aboutPage() {
             <div className="flex shrink-0 mx-auto mt-96 rounded-full aspect-square bg-blue-500 bg-opacity-10 h-[200px] w-[200px] max-md:mt-10" />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* contac */}
     </section>
   );

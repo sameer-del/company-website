@@ -4,7 +4,7 @@
 
 :root {
   --background: #f9f8f9;
-  --foreground: #171717;
+  --foreground: #374151;
 }
 * {
   padding: 0;
@@ -33,7 +33,7 @@ body {
 .button {
   width: 250px;
   height: 54px;
-  background-color: #a980fe;
+  background-color: #3CB9D1;
   font-size: 18px;
   letter-spacing: 1px;
   color: white;

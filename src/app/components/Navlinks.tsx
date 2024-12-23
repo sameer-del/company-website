@@ -12,7 +12,7 @@ export default function navlinks() {
             { name: "cooperate profile", link: "/about" },
             { name: "new and events", link: "/about" },
             { name: "blog", link: "/about" },
-            { name: "career", link: "/about" },
+            { name: "career", link: "/about/career" },
           ],
         },
       ],
@@ -71,9 +71,9 @@ export default function navlinks() {
               <div>
                 <div className="absolute top-[6rem] z-10 hidden group-hover:md:block hover:md:block ">
                   <div className="py-3">
-                    <div className="w-4 h-4 left-[2.0rem] absolute mt-1 bg-[#A980FE]  rotate-45"></div>
+                    <div className="w-4 h-4 left-[2.0rem] absolute mt-1 bg-primary  rotate-45"></div>
                   </div>
-                  <div className=" bg-[#A980FE]  p-5 w-[600px] rounded-md shadow-slate-950">
+                  <div className=" bg-primary  p-5 w-[600px] rounded-md shadow-slate-950">
                     {link.sublinks.map((mysublinks) => (
                       <ul className=" grid grid-cols-3 gap-8 text-white font-serif text-[18px] capitialize">
                         {mysublinks.sublink.map((slink) => (

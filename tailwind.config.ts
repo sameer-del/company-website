@@ -10,8 +10,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        /* background: "var(--background)",
+        foreground: "var(--foreground)", */
+        primary: "#3CB9D1",
+        secondary: "#DBF1FF",
+        primary_text: "#374151",
+        secondary_text: "#A0AEC0",
       },
       backgroundImage: {
         "hero-pattern": "url('/images/software2.jpg')",

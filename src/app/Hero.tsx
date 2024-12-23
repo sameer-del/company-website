@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="pt-5">
+    <section className="">
       {/* hero Page */}
 
       <div className="relative flex flex-col justify-center items-center h-full w-full py-10">
-        <div className=" text-black w-full flex justify-center items-center flex-col  lg:px-[200px]">
+        <div className=" text-primary_text w-full flex justify-center items-center flex-col  lg:px-[200px]">
           {/* styling elements */}
           <div className="hidden lg:block absolute top-10 left-[100px]">
             <img src="/assests/squiggle-2.svg" alt="" />
@@ -33,12 +33,10 @@ export default function Hero() {
           </p>
         </div>
         <div className=" mt-5 flex justify-center items-center flex-col ">
-          <p className="text-[#A880FF] text-center font-serif">
-            For Contact us Click here
-          </p>
+          <p className=" text-center font-serif">For Contact us Click here</p>
           <Link href="/contact">
             <button
-              className="w-[260px] h-[54px] bg-[#A980FE]  text-[18px] tracking-[1px] mt-3  font-sans text-white rounded-[10px]
+              className="w-[260px] h-[54px] bg-primary  text-[18px] tracking-[1px] mt-3  font-sans text-white rounded-[10px]
                     "
             >
               Get Started Today
@@ -66,9 +64,7 @@ export default function Hero() {
           />
         </div>
         <div className="w-full   lg:px-[200px] py-10">
-          <p className="text-[#A880FF] text-center font-serif">
-            More about Spike Teamspace
-          </p>
+          <p className=" text-center font-serif">More about Spike Teamspace</p>
           <p className="text-[21px] mt-5 font-mono capitalize text-center">
             Helping teams of all sizes overcome communication chaos
           </p>
@@ -149,7 +145,7 @@ export default function Hero() {
         </div>
         {/* grid end */}
         <div className="flex justify-center items-center">
-          <button className="w-[260px] h-[54px] bg-[#A980FE]  text-[18px] tracking-[1px] mt-3  font-sans text-white rounded-[10px]">
+          <button className="w-[260px] h-[54px] bg-primary  text-[18px] tracking-[1px] mt-3  font-sans text-white rounded-[10px]">
             View All our products
           </button>
         </div>
@@ -164,10 +160,10 @@ export default function Hero() {
             time support
           </h1>
           <div className="flex gap-5  mt-5">
-            <button className="w-[210px] h-[54px] bg-[#A980FE]  text-[18px] tracking-[1px] mt-3  font-sans text-white rounded-[10px]">
+            <button className="w-[210px] h-[54px] bg-primary  text-[18px] tracking-[1px] mt-3  font-sans text-white rounded-[10px]">
               View All our products
             </button>
-            <button className="w-[210px] h-[54px] bg-[#A980FE]  text-[18px] tracking-[1px] mt-3  font-sans text-white rounded-[10px]">
+            <button className="w-[210px] h-[54px] bg-primary  text-[18px] tracking-[1px] mt-3  font-sans text-white rounded-[10px]">
               View All our products
             </button>
           </div>
@@ -183,7 +179,7 @@ export default function Hero() {
         </div>
       </div>
       {/* another section */}
-      <div className="bg-[#a880ff]   w-full lg:h-[50vh] h-full py-5 mt-5 flex justify-center items-center">
+      <div className="bg-primary   w-full lg:h-[50vh] h-full py-5 mt-5 flex justify-center items-center">
         <div className=" h-full max-w-[85%] flex justify-center flex-col items-center gap-5">
           <h1 className="text-[40px] text-white font-bold  capitalize text-center">
             questions? we'll put your right <br /> path.
