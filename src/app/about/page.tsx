@@ -1,4 +1,5 @@
 import { ContactForm } from "../components/Contact";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
 
@@ -170,21 +171,8 @@ export default function aboutPage() {
         </div>
       </section>
       {/* blog component */}
-      {/* contac */}
-      {/* <div className="px-12 pt-10 pb-16 mt-20 max-w-full bg-blue-50 w-[1278px] max-md:px-5 max-md:mt-10">
-        <div className="flex gap-5 max-md:flex-col">
-          <div className="flex flex-col w-1/5 max-md:ml-0 max-md:w-full">
-            <div className="flex shrink-0 mx-auto mt-6 bg-blue-100 rounded-full aspect-square h-[200px] w-[200px] max-md:mt-10" />
-          </div>
-          <div className="flex flex-col ml-5 w-3/5 max-md:ml-0 max-md:w-full">
-            <ContactForm />
-          </div>
-          <div className="flex flex-col ml-5 w-1/5 max-md:ml-0 max-md:w-full">
-            <div className="flex shrink-0 mx-auto mt-96 rounded-full aspect-square bg-blue-500 bg-opacity-10 h-[200px] w-[200px] max-md:mt-10" />
-          </div>
-        </div>
-      </div> */}
-      {/* contac */}
+
+      <Footer />
     </section>
   );
 }

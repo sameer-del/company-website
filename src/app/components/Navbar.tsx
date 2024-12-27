@@ -32,26 +32,31 @@ export default function Navbar() {
             <div className="w-full flex justify-start items-center px-[50px] ">
               <nav>
                 <ul className="hidden sm:flex justify-center space-x-[50px] text-[17px] font-[500] pl-10 capitalize ">
+                  <Link href="/">
+                    <li className="py-7  uppercase font-semibold text-white sm:text-black cursor-pointer">
+                      Home
+                    </li>
+                  </Link>
                   <Navlinks />
                 </ul>
                 {/* mobile menu */}
 
-                <ul
+                <div
                   className={` md:hidden absolute  w-full h-[110vh] top-0 right-0 z-10 py-24 pl-4 pt-[200px] duration-500 ${open ? "left-0" : "left-[-100%]"}`}
                 >
-                  <li className="py-7 px-3 inline-block">
+                  <h1 className="py-7 px-3 inline-block">
                     <Link
                       href="/"
                       className="uppercase font-semibold text-secondary_text px-3 sm:text-black"
                     >
                       Home
                     </Link>
-                  </li>
+                  </h1>
                   <Navlinks />
                   <button className="w-[180px] bg-primary rounded-md py-2 text-[18px] tracking-[1px] text-black mt-10">
                     contact
                   </button>
-                </ul>
+                </div>
               </nav>
             </div>
           </div>

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: primary;
+  src: url(/images/ArgentParadiseDemoVersion-WporE.otf);
+}
+
 :root {
   --background: #f9f8f9;
   --foreground: #374151;
@@ -16,7 +21,8 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Oswald", sans-serif;
 }
 .construct {
   background-image: url("/images/construct.jpg");
@@ -33,7 +39,7 @@ body {
 .button {
   width: 250px;
   height: 54px;
-  background-color: #3CB9D1;
+  background-color: #3cb9d1;
   font-size: 18px;
   letter-spacing: 1px;
   color: white;

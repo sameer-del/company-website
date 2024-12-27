@@ -5,6 +5,7 @@ export default function navlinks() {
   const links = [
     {
       name: "about",
+      id: 1,
       submenu: true,
       sublinks: [
         {
@@ -19,6 +20,7 @@ export default function navlinks() {
     },
     {
       name: "product",
+      id: 2,
       submenu: true,
       sublinks: [
         {
@@ -40,6 +42,7 @@ export default function navlinks() {
     },
     {
       name: "industries",
+      id: 3,
       submenu: true,
       sublinks: [
         {
@@ -59,7 +62,7 @@ export default function navlinks() {
           <div className="px-5 text-left group duration-500">
             <h1
               className="py-7  uppercase font-semibold text-white sm:text-black cursor-pointer"
-              key={link.name}
+              key={link.id}
               onClick={() =>
                 heading !== link.name ? setHeading(link.name) : setHeading("")
               }
@@ -100,9 +103,9 @@ export default function navlinks() {
                 <div>
                   <div>
                     {slinks.sublink.map((slink) => (
-                      <li className="sm:hidden py-1 pl-5">
+                      <h1 className="sm:hidden py-1 pl-5">
                         <Link href={slink.link}>{slink.name}</Link>
-                      </li>
+                      </h1>
                     ))}
                   </div>
                 </div>
