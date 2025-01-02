@@ -25,17 +25,29 @@ export default function navlinks() {
       sublinks: [
         {
           sublink: [
-            { name: "workflow Engine", link: "/about" },
-            { name: "rule engine", link: "/about" },
-            { name: "amortization engine", link: "/about" },
-            { name: "report designer", link: "/about" },
-            { name: "letter designer", link: "/about" },
-            { name: "bug tracker", link: "/about" },
-            { name: "screen designer", link: "/about" },
-            { name: "document management", link: "/about" },
-            { name: "job designer", link: "/about" },
-            { name: "external api connecter", link: "/about" },
-            { name: "Aunthentication and authorization", link: "/about" },
+            { name: "workflow Engine", link: "/product/workflow-engine" },
+            { name: "rule engine", link: "/product/rule-engine" },
+            {
+              name: "loan calculator engine",
+              link: "/product/loan-calculator-engine",
+            },
+            { name: "report designer", link: "/product/report-designer" },
+            { name: "letter designer", link: "/product/letter-designer" },
+            { name: "bug tracker", link: "/product/bug-tracker" },
+            { name: "screen designer", link: "/product/screen-designer" },
+            {
+              name: "document management",
+              link: "/product/document-management",
+            },
+            { name: "job designer", link: "/product/job-designer" },
+            {
+              name: "external api connecter",
+              link: "/product/external-api-connector",
+            },
+            {
+              name: "authentication and authorization",
+              link: "/product/authentication-authorization",
+            },
           ],
         },
       ],

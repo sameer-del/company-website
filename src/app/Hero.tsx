@@ -14,22 +14,22 @@ export default function Hero() {
       {/* hero Page */}
 
       <div className="relative flex flex-col justify-center items-center  w-full py-10">
-        <div className=" text-primary_text w-full flex justify-center items-center flex-col  h-[60vh] pt-5 lg:px-[200px]">
+        <div className=" text-primary_text w-full flex justify-center items-center flex-col  h-[60vh] pt-5   lg:px-[200px]">
           {/* styling elements */}
-          <div className="hidden overflow-hidden lg:block absolute top-10 left-[-350px]">
+          {/* <div className="hidden  lg:block absolute top-10 left-[-350px]">
             <img
               src="/images/heropage-element-1.png"
               className="w-[100%] h-[400px]"
               alt=""
             />
-          </div>
-          <div className="hidden lg:block  absolute top-10 right-[-400px]">
+          </div> */}
+          {/* <div className="hidden   lg:block  absolute top-10 right-[-350px]">
             <img
               src="/images/heropage-element-1.png"
               className="w-[100%] h-[400px]"
               alt=""
             />
-          </div>
+          </div> */}
           {/* styling elements */}
 
           <h1 className="lg:text-[60px] text-[40px] px-2  text-center font-[900] capitalize font-serif">

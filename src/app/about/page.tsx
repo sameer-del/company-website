@@ -143,7 +143,7 @@ export default function aboutPage() {
       </div>
       {/* card-about */}
       {/* blog component */}
-      <section>
+      <section className="pb-10">
         <div className="w-full h-[100vh] px-[100px] ">
           <h1 className="text-center text-[45px] uppercase font-serif">
             our Blog
