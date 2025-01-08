@@ -42,12 +42,12 @@ export default function Navbar() {
                 {/* mobile menu */}
 
                 <div
-                  className={` md:hidden absolute  w-full h-[110vh] top-0 right-0 z-10 py-24 pl-4 pt-[200px] duration-500 ${open ? "left-0" : "left-[-100%]"}`}
+                  className={` md:hidden absolute bg-white text-black  w-full sm:h-[150vh] top-0 right-0 z-10 py-24 pl-4 pt-[200px] duration-500 ${open ? "left-0" : "left-[-100%]"}`}
                 >
                   <h1 className="py-7 px-3 inline-block">
                     <Link
                       href="/"
-                      className="uppercase font-semibold text-secondary_text px-3 sm:text-black"
+                      className="uppercase font-semibold text-black px-3 sm:text-black"
                     >
                       Home
                     </Link>

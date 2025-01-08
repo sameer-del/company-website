@@ -1,6 +1,6 @@
 import React from "react";
 
-const LoanCalculatorEngine = () => {
+const workFlowEngine = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
@@ -230,4 +230,4 @@ const LoanCalculatorEngine = () => {
   );
 };
 
-export default LoanCalculatorEngine;
+export default workFlowEngine;
