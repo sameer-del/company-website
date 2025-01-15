@@ -6,7 +6,7 @@ import Features from "./features";
 
 import Navbar from "@/app/components/Navbar";
 
-const ruleEngine = () => {
+const screenDesigner = () => {
   return (
     <div className="bg-gray-50">
       <Navbar />
@@ -76,4 +76,4 @@ const ruleEngine = () => {
   );
 };
 
-export default ruleEngine;
+export default screenDesigner;

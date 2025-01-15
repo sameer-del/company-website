@@ -1,0 +1,62 @@
+"use client";
+
+const HowCards = () => {
+  const howData = [
+    {
+      title: "Payment Gateways",
+      description:
+        "Integrate with third-party payment providers to process transactions securely.",
+    },
+    {
+      title: "CRM and ERP Integration",
+      description:
+        "Synchronize customer and operational data across platforms like Salesforce or SAP.",
+    },
+    {
+      title: "Social Media and Marketing",
+      description:
+        "Connect with APIs from Facebook, Twitter, or Mailchimp for campaign automation.",
+    },
+    {
+      title: "E-Commerce Platforms",
+      description:
+        "Link with marketplaces like Amazon or Shopify for order and inventory management.",
+    },
+    {
+      title: "Financial Services",
+      description:
+        "Integrate with external systems for loan processing, credit checks, or real-time financial data.",
+    },
+  ];
+
+  return (
+    <section className=" relative max-w-[98%] mx-auto bg-black py-10 rounded-[15px] mt-[20px] lg:px-10 px-3">
+      <div className="lg:max-w-5xl lg:mx-auto lg:px-6 ">
+        <h2 className="text-3xl font-bold text-white mb-6 text-center">
+          KYC Vault: Secure, Efficient, and Trustworthy
+        </h2>
+        <div className=" mt-10">
+          {howData.map((card, index) => (
+            <div
+              className="realtive group duration-500 bg-white p-6 rounded-lg shadow hover:border-black    border-blue-600  border-b-4 border-r-4 hover:bg-blue-400 hover:text-white"
+              key={index}
+            >
+              <h3 className="text-xl  font-semibold w-full  mb-3">
+                {card.title}
+              </h3>
+
+              <p className=" hidden group-hover:block capitalize font-[secondary] text-[19px]">
+                {card.description}
+              </p>
+            </div>
+          ))}
+        </div>
+        <div className="hidden lg:block absolute bottom-[100px] left-[80px]">
+          <img src="/images/arrow-grp.svg" alt="das" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HowCards;

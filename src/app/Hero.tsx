@@ -13,7 +13,12 @@ export default function Hero() {
     <section className="">
       {/* hero Page */}
 
-      <div className="relative flex flex-col justify-center items-center  w-full py-10">
+      <div
+        className="relative flex flex-col justify-center items-center bg-cover h-[90vh]  w-full "
+        style={{
+          backgroundImage: "url(/images/product-assests/product-bg.jpg)",
+        }}
+      >
         <div className=" text-primary_text w-full flex justify-center items-center flex-col  h-[60vh] pt-5   lg:px-[200px]">
           {/* styling elements */}
           {/* <div className="hidden  lg:block absolute top-10 left-[-350px]">

@@ -34,20 +34,27 @@ export default function navlinks() {
               name: "loan calculator engine",
               link: "/product/loan-calculater-engine",
             },
-            { name: "workflow Engine", link: "/product/workflow-engine" },
-
-            { name: "letter designer", link: "/product/letter-designer" },
-            { name: "bug tracker", link: "/product/bug-tracker" },
             { name: "screen designer", link: "/product/screen-designer" },
-            {
-              name: "document management",
-              link: "/product/document-management",
-            },
-            { name: "job designer", link: "/product/job-designer" },
+            { name: "Aadhaar Data Vault ", link: "/product/aadhar-vault" },
+            { name: "KYC Vault Solution ", link: "/product/kyc-vault" },
+            { name: "letter designer", link: "/product/letter-designer" },
             {
               name: "external api connecter",
               link: "/product/external-api-connector",
             },
+            {
+              name: "document management",
+              link: "/product/document-management",
+            },
+
+            { name: "workflow Engine", link: "/product/workflow-engine" },
+
+            
+            { name: "bug tracker", link: "/product/bug-tracker" },
+
+            
+            { name: "job designer", link: "/product/job-designer" },
+            
             {
               name: "authentication and authorization",
               link: "/product/authentication-authorization",
