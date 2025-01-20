@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 export default function navlinks() {
@@ -46,19 +46,14 @@ export default function navlinks() {
               name: "document management",
               link: "/product/document-management",
             },
-
-            { name: "workflow Engine", link: "/product/workflow-engine" },
-
-            
             { name: "bug tracker", link: "/product/bug-tracker" },
-
-            
             { name: "job designer", link: "/product/job-designer" },
-            
             {
               name: "authentication and authorization",
               link: "/product/authentication-authorization",
             },
+
+            { name: "workflow Engine", link: "/product/workflow-engine" },
           ],
         },
       ],
@@ -80,72 +75,78 @@ export default function navlinks() {
   ];
   return (
     <>
-      {links.map((link, index) => (
-        <div key={index}>
-          <div className="px-5 text-left group duration-500">
-            <h1
-              className="py-7  uppercase font-semibold text-black sm:text-black cursor-pointer"
-              key={link.id}
-              onClick={() =>
-                heading !== link.name ? setHeading(link.name) : setHeading("")
-              }
-            >
-              {link.name}
-              <span className="ml-2 inline-block lg:hidden">
-                {heading === link.name ? <IoIosArrowUp /> : <IoIosArrowDown />}
-              </span>
-            </h1>
+      <Suspense fallback={<p>Loading feed...</p>}>
+        {links.map((link, index) => (
+          <div key={index}>
+            <div className="px-5 text-left group  duration-500">
+              <h1
+                className="py-7 font-raleway hover:-translate-y-1 hover:scale-10 duration-300  uppercase font-semibold text-black sm:text-black cursor-pointer"
+                key={link.id}
+                onClick={() =>
+                  heading !== link.name ? setHeading(link.name) : setHeading("")
+                }
+              >
+                {link.name}
+                <span className="ml-2 inline-block lg:hidden">
+                  {heading === link.name ? (
+                    <IoIosArrowUp />
+                  ) : (
+                    <IoIosArrowDown />
+                  )}
+                </span>
+              </h1>
 
-            {link.submenu && (
-              <div>
-                <div className="absolute top-[6rem] z-10 hidden group-hover:md:block hover:md:block ">
-                  <div className="py-3">
-                    <div className="w-4 h-4 left-[2.0rem] absolute mt-1 bg-primary  rotate-45"></div>
-                  </div>
-                  <div className=" bg-primary  p-5 w-[600px] rounded-md shadow-slate-950">
-                    {link.sublinks.map((mysublinks, index) => (
-                      <ul
-                        className=" grid grid-cols-3 gap-8 text-white font-serif text-[18px] capitialize"
-                        key={index}
-                      >
-                        {mysublinks.sublink.map((slink, index) => (
-                          <li key={index}>
-                            <Link
-                              href={slink.link}
-                              className=" hover:text-black duration-150 "
-                            >
-                              {slink.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    ))}
+              {link.submenu && (
+                <div>
+                  <div className="absolute top-[4rem] duration-300  z-10 hidden group-hover:md:block hover:md:block ">
+                    <div className="py-3">
+                      <div className="w-4 h-4 left-[2.0rem] absolute mt-1 bg-black  rotate-45"></div>
+                    </div>
+                    <div className=" bg-black  p-5 w-[600px]  rounded-md shadow-slate-950">
+                      {link.sublinks.map((mysublinks, index) => (
+                        <ul
+                          className=" grid grid-cols-3 gap-8 text-white font-serif text-[18px] capitialize "
+                          key={index}
+                        >
+                          {mysublinks.sublink.map((slink, index) => (
+                            <li key={index} className="">
+                              <Link
+                                href={slink.link}
+                                className=" hover:text-green-700 duration-150 "
+                              >
+                                {slink.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      ))}
+                    </div>
                   </div>
                 </div>
+              )}
+              {/* mobile menu */}
+              <div
+                className={`${heading === link.name ? "md:hidden" : "hidden"}`}
+              >
+                {link.sublinks.map((slinks, index) => (
+                  <div key={index}>
+                    <div>
+                      {slinks.sublink.map((slink, index) => (
+                        <h1
+                          className="sm:hidden  pl-5 text-[19px] capitalize font-[secondary] font-bold border-b-2 py-2"
+                          key={index}
+                        >
+                          <Link href={slink.link}>{slink.name}</Link>
+                        </h1>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
-            )}
-            {/* mobile menu */}
-            <div
-              className={`${heading === link.name ? "md:hidden" : "hidden"}`}
-            >
-              {link.sublinks.map((slinks, index) => (
-                <div key={index}>
-                  <div>
-                    {slinks.sublink.map((slink, index) => (
-                      <h1
-                        className="sm:hidden  pl-5 text-[19px] capitalize font-[secondary] font-bold border-b-2 py-2"
-                        key={index}
-                      >
-                        <Link href={slink.link}>{slink.name}</Link>
-                      </h1>
-                    ))}
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </Suspense>
     </>
   );
 }

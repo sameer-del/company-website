@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+
 import Cards from "./cards";
 import Features from "./features";
 
@@ -10,43 +10,33 @@ const screenDesigner = () => {
   return (
     <div className="bg-gray-50">
       <Navbar />
-      {/* Hero Section */}
-      <header className="bg-blue-600 text-white py-16">
-        <div className="max-w-5xl mx-auto text-center px-4">
-          <h1 className="text-[52px] font-bold mb-4 font-[secondary]">
-            Advanced Screen Builder
+      <header className="bg-[#ffffff]    ">
+        <div className="lg:max-w-5xl lg:mx-auto text-center px-4 h-[70vh] flex flex-col items-center justify-center">
+          <h1 className="lg:text-[52px] text-[32px]  mb-4 font-[raleway] font-[700]">
+            Build Custom Forms with Ease Using Our Advanced Screen Builder
           </h1>
-          <p className="text-[19px] mb-6 font-[secondary]">
+          <p className="lg:text-[17px] mb-6 font-[raleway]">
             Our screen builder offers a high-performance, user-friendly platform
-            to create customized forms with minimal effort.
+            to create customized forms with minimal effort. Powered by the
+            latest technologies, it provides an intuitive interface and smart
+            features designed to streamline your design process.
           </p>
+          <Link href="#more">
+            <button className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-black hover:border-black hover:border-[1px] duration-300 mt-5 w-[150px] bg-black py-4 rounded-full text-white font-serif ">
+              view more
+            </button>
+          </Link>
+        </div>
+        <div className="flex justify-center items-center bg-blue-300/5">
+          <img
+            src="/images/product-assests/Bank-Hero.png"
+            alt=""
+            className=""
+          />
         </div>
       </header>
+      {/* Hero Section */}
 
-      {/* What Makes It Exceptional Section */}
-      <section className="py-12 lg:px-6 px-0 lg:max-w-[85%] lg:mx-auto ">
-        <div className="grid lg:grid-cols-2 place-items-center">
-          <div className=" flex flex-col justify-center items-center gap-2  ">
-            <h1 className=" lg:text-[30px] text-[25px] mb-2 uppercase font-serif text-center ">
-              Build Custom Forms with Ease Using Our Advanced Screen Builder
-            </h1>
-            <p className="text-[18px] font-[secondary] lg:max-w-[75%] text-center px-5">
-              Our screen builder offers a high-performance, user-friendly
-              platform to create customized forms with minimal effort. Powered
-              by the latest technologies, it provides an intuitive interface and
-              smart features designed to streamline your design process.
-            </p>
-            <Link href="#more">
-              <button className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-black hover:border-black hover:border-[1px] duration-300 mt-5 w-[150px] bg-black py-4 rounded-full text-white font-serif ">
-                view more
-              </button>
-            </Link>
-          </div>
-          <div className="">
-            <img src="/images/loan-pic.png" alt="" className="w-[550px]" />
-          </div>
-        </div>
-      </section>
       {/* cards section */}
       <Cards />
       {/* cards section */}
@@ -55,12 +45,13 @@ const screenDesigner = () => {
       {/* faetures section */}
 
       {/* Call to Action */}
-      <section className="text-center bg-blue-600 text-white py-16">
+
+      <section className="text-center bg-[#e8fffb]  rounded-t-[100px] py-16">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-raleway mb-4">
             Get Started with Our Screen Builder Today
           </h2>
-          <p className="text-lg mb-6">
+          <p className="text-lg mb-6 font-raleway">
             Build beautiful, responsive, and high-performance screens in
             minutes. Try it now and experience the future of form building.
           </p>

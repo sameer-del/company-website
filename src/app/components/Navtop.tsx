@@ -1,10 +1,20 @@
+import { MdOutlineMarkEmailUnread } from "react-icons/md";
+import { FaSquarePhone } from "react-icons/fa6";
 export default function Navtop() {
   return (
     <section>
-      <div className="w-full h-[40px] bg-primary flex items-center justify-center text-white ">
-        <p className="text-[12px] max-w-[95%] mx-auto text-center lg:text-[16px]">
-          ✨ NEW! Take your team productivity to new heights with Spike’s Shared
-          Inbox. Learn more 👉
+      <div className="w-full h-[40px]  flex items-center justify-end  pr-10 text-[13px] lg:text-[16px] font-raleway">
+        <p className=" inline-flex justify-center items-center px-2 ">
+          <span className="px-1">
+            <MdOutlineMarkEmailUnread />
+          </span>
+          rmailskjabcih@gmail.com
+        </p>
+        <p className=" inline-flex justify-center items-center  px-2S">
+          <span className="px-1">
+            <FaSquarePhone />
+          </span>
+          +91 4654985678
         </p>
       </div>
     </section>

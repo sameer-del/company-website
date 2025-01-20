@@ -1,7 +1,7 @@
 "use client";
 
 const HowCards = () => {
-  const howData = [
+  const Data = [
     {
       title: "Define Rules",
       description:
@@ -24,37 +24,32 @@ const HowCards = () => {
     },
     {
       title: "Monitor & Optimize",
+      style: "col-span-2",
       description:
         "continuously monitor the engine's performance with built-in AI analytics, optimizing rules dynamically based on ongoing data.",
     },
   ];
 
   return (
-    <section className=" relative max-w-[98%] mx-auto bg-black py-10 rounded-[15px] mt-[20px] lg:px-10 px-3">
-      <div className="lg:max-w-5xl lg:mx-auto lg:px-6 ">
-        <h2 className="text-3xl font-bold text-white mb-6 text-center">
-          How It Works
-        </h2>
-        <div className=" mt-10">
-          {howData.map((card, index) => (
+    <section className="bg-[#f8f9fa] pb-[100px] lg:px-[100px] px-5">
+      <div className="">
+        <h1 className="lg:text-[45px] text-center text-[28px] font-raleway font-[600]">
+          Who Can Benefit?
+        </h1>
+      </div>
+      <section className="mt-5">
+        <div className="grid lg:grid-cols-2  place-items-center gap-5">
+          {Data.map((card, index) => (
             <div
-              className="realtive group duration-500 bg-white p-6 rounded-lg shadow hover:border-black    border-blue-600  border-b-4 border-r-4 hover:bg-blue-400 hover:text-white"
+              className={`lg:w-[488px] py-[25px] px-[15px] rounded-[30px]  bg-[#f4ffec]  shadow-md ${card.style}`}
               key={index}
             >
-              <h3 className="text-xl  font-semibold w-full  mb-3">
-                {card.title}
-              </h3>
-
-              <p className=" hidden group-hover:block capitalize font-[secondary] text-[19px]">
-                {card.description}
-              </p>
+              <h1 className="font-raleway text-[28px]">{card.title}</h1>
+              <p className=" font-raleway text-[18px]">{card.description}</p>
             </div>
           ))}
         </div>
-        <div className="hidden lg:block absolute bottom-[100px] left-[80px]">
-          <img src="/images/arrow-grp.svg" alt="das" />
-        </div>
-      </div>
+      </section>
     </section>
   );
 };

@@ -1,60 +1,61 @@
 "use client";
 
 const HowCards = () => {
-  const howData = [
+  const Data = [
     {
       title: "Sanction Letters",
       description:
         "Automatically generate and send approval letters for loans, credit cards, or other financial sanctions.",
+      style: "bg-[#f2f2f2]",
     },
     {
       title: "Offer Letters",
       description:
         "Create personalized offer letters for job applicants or business proposals.",
+      style: "bg-[#d6f5d6]",
     },
     {
       title: "Acknowledgment Letters",
       description:
         "Send acknowledgment letters for payments, receipts, or inquiries.",
+      style: "bg-[#e6f7ff]",
     },
     {
       title: "Appointment Letters",
       description:
         "Simplify onboarding by automating appointment letters for new hires.",
+      style: "bg-[#fff2cc]",
     },
     {
       title: "Customer Communication",
       description:
         "Generate and send customized letters for policy updates, renewals, or promotions.",
+      style: "bg-[#ffebcd] lg:col-span-2",
     },
   ];
 
   return (
-    <section className=" relative max-w-[98%] mx-auto bg-black py-10 rounded-[15px] mt-[20px] lg:px-10 px-3">
-      <div className="lg:max-w-5xl lg:mx-auto lg:px-6 ">
-        <h2 className="text-3xl font-bold text-white mb-6 text-center">
-          Use Cases for the Letter Designer
-        </h2>
-        <div className=" mt-10">
-          {howData.map((card, index) => (
+    <section className="bg-[#f8f9fa] pb-[100px] lg:px-[100px] px-5">
+      <div className="pb-[50px]">
+        <h1 className="lg:text-[45px] text-center text-[28px] font-raleway font-[600]">
+          KYC Vault: Secure, Efficient, and Trustworthy
+        </h1>
+      </div>
+      <section className="">
+        <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center gap-5">
+          {Data.map((card, index) => (
             <div
-              className="realtive group duration-500 bg-white p-6 rounded-lg shadow hover:border-black    border-blue-600  border-b-4 border-r-4 hover:bg-blue-400 hover:text-white"
+              className={`lg:w-[488px]  p-[25px] rounded-[30px]  bg-[#f4ffec]  shadow-md ${card.style}`}
               key={index}
             >
-              <h3 className="text-xl  font-semibold w-full  mb-3">
-                {card.title}
-              </h3>
-
-              <p className=" hidden group-hover:block capitalize font-[secondary] text-[19px]">
+              <h1 className="font-raleway text-[25px] pb-3">{card.title}</h1>
+              <p className=" font-raleway text-[17px] max-w-[85%] ">
                 {card.description}
               </p>
             </div>
           ))}
         </div>
-        <div className="hidden lg:block absolute bottom-[100px] left-[80px]">
-          <img src="/images/arrow-grp.svg" alt="das" />
-        </div>
-      </div>
+      </section>
     </section>
   );
 };

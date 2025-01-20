@@ -1,70 +1,73 @@
 "use client";
 
 const HowCards = () => {
-  const howData = [
+  const Data = [
     {
       title: "Seamless API Integration",
       description:
         "Easily integrate Aadhaar Data Vault with existing systems through secure and simple REST APIs.",
+      style: "bg-[#e8fffb]",
     },
     {
       title: "Comprehensive Access Logs",
       description:
         "View detailed API access logs with advanced search capabilities via an intuitive web interface.",
+      style: "bg-[#f4ffec]",
     },
     {
       title: "End-to-End Data Security",
       description:
         "Benefit from strong database encryption, ensuring data remains protected even in the event of a security breach.",
+      style: "bg-[#fdffef]",
     },
     {
       title: "Compliance with UIDAI Standards",
       description:
         "Leverage encryption with leading HSM models to meet UIDAI’s mandatory encryption guidelines.",
+      style: "bg-[#f4ffec]",
     },
     {
       title: "UUID-Based Reference Keys",
       description:
         "Protect Aadhaar numbers with computationally infeasible reference keys, ensuring secure and private mapping.",
+      style: "bg-[#e8fffb]",
     },
     {
       title: "Role-Based Access Control",
       description:
         "Manage user access effectively with a role-based administration console for secure viewing of reference key mappings and access logs.",
+      style: "bg-[#fdffef]",
     },
     {
       title: "Real-Time Alerts",
       description:
         "Stay alerted with instant notifications for any unauthorized transactions to safeguard your data.",
+      style: "bg-[#f4ffec] lg:col-span-2",
     },
   ];
 
   return (
-    <section className=" relative max-w-[98%] mx-auto bg-black py-10 rounded-[15px] mt-[20px] lg:px-10 px-3">
-      <div className="lg:max-w-5xl lg:mx-auto lg:px-6 ">
-        <h2 className="text-3xl font-bold text-white mb-6 text-center">
+    <section className="bg-[#f8f9fa] pb-[100px] lg:px-[100px] px-5">
+      <div className="pb-[50px]">
+        <h1 className="lg:text-[45px] text-center text-[28px] font-raleway font-[600]">
           Aadhaar Data Vault: Secure, Efficient, and Trustworthy
-        </h2>
-        <div className=" mt-10">
-          {howData.map((card, index) => (
+        </h1>
+      </div>
+      <section className="">
+        <div className="grid lg:grid-cols-2 grid-cols-1 place-items-center gap-5">
+          {Data.map((card, index) => (
             <div
-              className="realtive group duration-500 bg-white p-6 rounded-lg shadow hover:border-black    border-blue-600  border-b-4 border-r-4 hover:bg-blue-400 hover:text-white"
+              className={`lg:w-[488px]  p-[25px] rounded-[30px]  bg-[#f4ffec]  shadow-md ${card.style}`}
               key={index}
             >
-              <h3 className="text-xl  font-semibold w-full  mb-3">
-                {card.title}
-              </h3>
-
-              <p className=" hidden group-hover:block capitalize font-[secondary] text-[19px]">
+              <h1 className="font-raleway text-[25px] pb-3">{card.title}</h1>
+              <p className=" font-raleway text-[17px] max-w-[85%] ">
                 {card.description}
               </p>
             </div>
           ))}
         </div>
-        <div className="hidden lg:block absolute bottom-[100px] left-[80px]">
-          <img src="/images/arrow-grp.svg" alt="das" />
-        </div>
-      </div>
+      </section>
     </section>
   );
 };

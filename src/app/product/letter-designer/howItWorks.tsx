@@ -30,21 +30,21 @@ const Howitworks = () => {
   ];
 
   return (
-    <section className=" relative max-w-[98%] mx-auto bg-black py-10 rounded-[15px]  mt-[20px] lg:px-10 px-3">
+    <section className=" relative max-w-[98%] mx-auto text-black py-10 rounded-[15px]  mt-[20px] lg:px-10 px-3 font-raleway">
       <div className="lg:max-w-[98%] lg:mx-auto lg:px-6  ">
-        <h2 className="text-[35px] uppercase font-[secondary] text-white/[0.5] text-center hover:text-white transition-all  font-semibold w-full   mb-1">
+        <h2 className="lg:text-[45px] text-center text-[28px] font-raleway font-[600]">
           How It Works
         </h2>
-        <div className=" mt-10 lg:flex justify-between items-center gap-10  py-10">
+        <div className=" mt-10 flex lg:flex-row flex-col justify-between items-center gap-10  ">
           <div className="flex-1">
             {" "}
             {howData.map((card, index) => (
               <div
-                className="realtive group duration-500  p-6 rounded-lg shadow mb-3 border-white border-b-2 "
+                className="realtive group duration-500  p-6 rounded-lg shadow mb-3 hover:cursor-pointer border-white border-b-2 "
                 key={index}
               >
                 <h3
-                  className="text-[35px] uppercase font-[secondary] text-white/[0.5] hover:text-white transition-all  font-semibold w-full   mb-3"
+                  className="text-[30px]  uppercase   transition-all  font-semibold w-full   mb-3"
                   onClick={() =>
                     heading !== card.title
                       ? setHeading(card.title)
@@ -62,14 +62,14 @@ const Howitworks = () => {
                 </h3>
 
                 <p
-                  className={`${heading === card.title ? "group-hover:block w-full text-[19px] text-white capitalize max-w-[88%] " : "hidden"}`}
+                  className={`${heading === card.title ? "group-hover:block w-full text-[19px] capitalize max-w-[88%] " : "hidden"}`}
                 >
                   {card.description}
                 </p>
               </div>
             ))}
           </div>
-          <div className="flex-1 hidden lg:block">
+          <div className="flex-1">
             <img src="/images/product-assests/product-how-image.png" alt="" />
           </div>
         </div>

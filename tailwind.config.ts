@@ -22,6 +22,8 @@ export default {
       },
       fontFamily: {
         sans: ["Alegreya", "sans-serif"],
+        raleway: "var(--display-font)",
+        para: "var(--font-geist-sans)",
       },
     },
   },

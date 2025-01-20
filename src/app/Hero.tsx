@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import WhyChoose from "./components/hero-components/whyChoose";
+import Product from "./components/hero-components/product";
 
 export default function Hero() {
   const [ref, inView] = useInView({
@@ -19,7 +21,7 @@ export default function Hero() {
           backgroundImage: "url(/images/product-assests/product-bg.jpg)",
         }}
       >
-        <div className=" text-primary_text w-full flex justify-center items-center flex-col  h-[60vh] pt-5   lg:px-[200px]">
+        <div className=" text-primary_text w-full flex justify-center items-center flex-col     lg:px-[200px]">
           {/* styling elements */}
           {/* <div className="hidden  lg:block absolute top-10 left-[-350px]">
             <img
@@ -37,7 +39,7 @@ export default function Hero() {
           </div> */}
           {/* styling elements */}
 
-          <h1 className="lg:text-[60px] text-[40px] px-2  text-center font-[900] capitalize font-serif">
+          <h1 className="lg:text-[60px] text-[40px] px-2   text-center font-[900] capitalize font-serif">
             Innovating the Future with <br />
             <span className=" inline-block text-[40px] lg:text-[60px] ">
               <Typeanimation />
@@ -54,7 +56,7 @@ export default function Hero() {
             </p>
             <Link href="/contact">
               <button
-                className="w-[260px] h-[54px] bg-primary  text-[18px] tracking-[1px] mt-3  font-sans text-white rounded-[10px]
+                className="w-[180px] h-[54px] border-black border-2  text-[17px] tracking-[1px] mt-3  font-sans  rounded-[10px]
                     "
               >
                 Get Started Today
@@ -101,15 +103,11 @@ export default function Hero() {
           {/* about paragraph */}
           {/* about achievement */}
           <div
-            className="  flex lg:flex-row flex-col justify-between lg:px-[50px] pt-[50px]"
+            className="bg-[#F2F3F4]  flex lg:flex-row flex-col justify-between lg:px-[50px] pt-[50px]"
             ref={ref}
           >
             <div className="w-[40%] ">
-              <img
-                src="/images/heropage-element.png"
-                alt=""
-                className="w-[450px]"
-              />
+              <img src="/images/about-main.png" alt="" className="w-[450px]" />
             </div>
             <div className="flex-1 grid lg:grid-cols-2 grid-rows-2 gap-2  py-10 ">
               <div className=" bg-slate-500/10 rounded-[15px] flex  justify-around items-center">
@@ -206,7 +204,12 @@ export default function Hero() {
           {/* about achievement */}
         </div>
       </div>
-
+      {/* why choose us */}
+      <WhyChoose />
+      {/* why choose us */}
+      {/* product showcase */}
+      <Product />
+      {/* product showcase */}
       {/* product grid */}
       <h1 className="text-center text-[40px] uppercase text-[primary]">
         our product
