@@ -6,8 +6,9 @@ import { MdDescription } from "react-icons/md";
 import Cards from "./cards";
 import Features from "./features";
 import HowCards from "./howCard";
+import { Panimation } from "@/app/components/animation/pAnimation";
 
-const loanCalculaterEngine = () => {
+const ReportDesigner = () => {
   return (
     <div className="bg-gray-50">
       <Navbar />
@@ -66,4 +67,4 @@ const loanCalculaterEngine = () => {
   );
 };
 
-export default loanCalculaterEngine;
+export default ReportDesigner;

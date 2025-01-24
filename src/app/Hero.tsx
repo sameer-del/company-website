@@ -1,18 +1,23 @@
 "use client";
-import Typeanimation from "@/app/components/Typeanimation";
+import { RotateWords } from "@/app/components/animation/Typeanimation";
+import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
+/* import { useInView } from "react-intersection-observer"; */
 import WhyChoose from "./components/hero-components/whyChoose";
 import Product from "./components/hero-components/product";
+import { motion, useInView } from "framer-motion";
+import { BlurIn } from "./components/hero-components/textanimation";
+import { Panimation } from "./components/animation/pAnimation";
 
 export default function Hero() {
-  const [ref, inView] = useInView({
+  /*   const [ref, inView] = useInView({
     threshold: 0.5,
-  });
+  }); */
+
   return (
-    <section className="">
+    <section className="font-raleway">
       {/* hero Page */}
 
       <div
@@ -21,7 +26,7 @@ export default function Hero() {
           backgroundImage: "url(/images/product-assests/product-bg.jpg)",
         }}
       >
-        <div className=" text-primary_text w-full flex justify-center items-center flex-col     lg:px-[200px]">
+        <div className="  w-full flex justify-center items-center flex-col     lg:px-[200px]">
           {/* styling elements */}
           {/* <div className="hidden  lg:block absolute top-10 left-[-350px]">
             <img
@@ -39,21 +44,23 @@ export default function Hero() {
           </div> */}
           {/* styling elements */}
 
-          <h1 className="lg:text-[60px] text-[40px] px-2   text-center font-[900] capitalize font-serif">
+          <BlurIn
+            className={`lg:text-[60px] text-[40px] px-2   text-center font-[900] capitalize `}
+          >
             Innovating the Future with <br />
             <span className=" inline-block text-[40px] lg:text-[60px] ">
-              <Typeanimation />
+              {/* <Typeanimation /> */}
+              <RotateWords words={["Impactful", "focused", "efficient"]} />
               Software Solutions
             </span>
-          </h1>
-          <p className="text-[19px] mt-5 font-[primary] capitalize text-center font-[600]  lg:max-w-[85%]">
+          </BlurIn>
+
+          <p className="text-[19px] mt-5  capitalize text-center font-[600]  lg:max-w-[85%]">
             At Ruduo Technologies, we bring your ideas to life with innovative
             software solutions tailored to your unique needs.
           </p>
           <div className=" mt-5 flex justify-center items-center flex-col ">
-            <p className=" text-center font-[primary]">
-              For Contact us Click here
-            </p>
+            <p className=" text-center ">For Contact us Click here</p>
             <Link href="/contact">
               <button
                 className="w-[180px] h-[54px] border-black border-2  text-[17px] tracking-[1px] mt-3  font-sans  rounded-[10px]
@@ -80,11 +87,8 @@ export default function Hero() {
           </div>
           {/* about heading */}
           {/* about paragraph */}
-          <div
-            className="flex lg:flex-row flex-col w-full   lg:px-[100px] justify-center items-center gap-5 pt-[50px]"
-            ref={ref}
-          >
-            <p className="flex-1  text-[19px] text-start  font-[secondary]">
+          <div className="flex lg:flex-row flex-col w-full   lg:px-[100px] justify-center items-center gap-5 pt-[50px]">
+            <p className="flex-1 text-[19px] text-start">
               At Ruduo Technologies, we are driven by innovation and a shared
               passion for technology. Founded by a team of like-minded software
               experts, each with deep expertise in diverse fields and domains,
@@ -92,7 +96,7 @@ export default function Hero() {
               deploy products.
             </p>
 
-            <p className="flex-1 text-[19px] text-start    font-[secondary]">
+            <p className="flex-1 text-[19px] text-start    ">
               As a startup, our mission is to empower businesses with a
               cutting-edge product platform that is both plug-and-play and
               highly customizable. Our platform allows customers to seamlessly
@@ -102,10 +106,7 @@ export default function Hero() {
           </div>
           {/* about paragraph */}
           {/* about achievement */}
-          <div
-            className="bg-[#F2F3F4]  flex lg:flex-row flex-col justify-between lg:px-[50px] pt-[50px]"
-            ref={ref}
-          >
+          <div className="bg-[#F2F3F4]  flex lg:flex-row flex-col justify-between lg:px-[50px] pt-[50px]">
             <div className="w-[40%] ">
               <img src="/images/about-main.png" alt="" className="w-[450px]" />
             </div>
@@ -121,9 +122,9 @@ export default function Hero() {
                 <div className="flex  flex-1 justify-center items-center flex-col">
                   <p className="text-[18px] text-start px-1">
                     <span className="text-[28px] tracking-[2px] text-start font-bold">
-                      {inView ? (
+                      {/* {inView ? (
                         <CountUp start={0} end={100} duration={2.5} />
-                      ) : null}
+                      ) : null} */}
                     </span>
                     %
                     <br />
@@ -143,9 +144,9 @@ export default function Hero() {
                 <div className="flex  flex-1 justify-center items-center flex-col">
                   <p className="text-[17px] text-start px-1">
                     <span className="text-[28px] tracking-[2px] text-start font-bold">
-                      {inView ? (
+                      {/* {inView ? (
                         <CountUp start={0} end={100} duration={2.5} />
-                      ) : null}
+                      ) : null} */}
                     </span>
                     %
                     <br />
@@ -166,9 +167,9 @@ export default function Hero() {
                 <div className="flex  flex-1 justify-center items-center flex-col">
                   <p className="text-[17px] text-start px-1">
                     <span className="text-[28px] tracking-[2px] text-start font-bold">
-                      {inView ? (
+                      {/* {inView ? (
                         <CountUp start={0} end={100} duration={2.5} />
-                      ) : null}
+                      ) : null} */}
                     </span>
                     %
                     <br />
@@ -188,9 +189,9 @@ export default function Hero() {
                 <div className="flex  flex-1 justify-center items-center flex-col">
                   <p className="text-[17px] text-start px-1">
                     <span className="text-[28px] tracking-[2px] text-start font-bold">
-                      {inView ? (
+                      {/*  {inView ? (
                         <CountUp start={0} end={100} duration={2.5} />
-                      ) : null}
+                      ) : null} */}
                     </span>
                     %
                     <br />
@@ -227,7 +228,7 @@ export default function Hero() {
               />
             </div>
             <div className="h-[210px]  w-full ">
-              <h1 className="text-center font-[primary] uppercase font-bold text-[23px]">
+              <h1 className="text-center  uppercase font-bold text-[23px]">
                 Workflow Engine
               </h1>
               <p className="max-w-[85%] mx-auto py-2 ">
@@ -250,7 +251,7 @@ export default function Hero() {
               />
             </div>
             <div className="h-[210px]  w-full ">
-              <h1 className="text-center  uppercase font-bold  text-[24px] font-[primary]">
+              <h1 className="text-center  uppercase font-bold  text-[24px] ">
                 Rule Engine
               </h1>
               <p className="max-w-[85%] mx-auto py-2">
@@ -273,7 +274,7 @@ export default function Hero() {
               />
             </div>
             <div className="h-[210px]  w-full ">
-              <h1 className="text-center  uppercase font-bold text-[23px] font-[primary]">
+              <h1 className="text-center  uppercase font-bold text-[23px] ">
                 Bug Tracker
               </h1>
               <p className="max-w-[85%] mx-auto py-2">

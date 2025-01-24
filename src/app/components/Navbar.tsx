@@ -12,12 +12,12 @@ export default function Navbar() {
   return (
     <>
       <Navtop />
-      <section className="sticky z-50 bg-white top-0 ">
+      <section className="sticky z-50 bg-white/40  backdrop-blur top-0 ">
         <div className="  w-full h-[90px]  flex justify-around items-center border-[2px]">
           <div className="flex flex-1 ">
             <div className=" flex items-center justify-center z-40 md:w-auto w-full ">
               <div
-                className="sm:hidden absolute  right-[50px] text-3xl top-[60px] "
+                className="sm:hidden absolute  right-[40px] text-3xl top-[23px] border-black border-[1px] p-[5px] rounded-full "
                 onClick={() => setOpen(!open)}
               >
                 {open ? <IoCloseSharp /> : <IoMenu />}
@@ -41,7 +41,7 @@ export default function Navbar() {
                 {/* mobile menu */}
 
                 <div
-                  className={` md:hidden absolute bg-white text-black  w-full sm:h-[150vh] top-0 right-0 z-10 py-24 pl-4 pt-[200px] duration-500 ${open ? "left-0" : "left-[-100%]"}`}
+                  className={` md:hidden absolute bg-white text-black  w-full sm:h-[150vh] top-0 right-0 z-10 py-24 pl-4 pt-[150px] duration-500 ${open ? "left-0" : "left-[-100%]"}`}
                 >
                   <h1 className="py-7 px-3 inline-block font-raleway">
                     <Link

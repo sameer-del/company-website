@@ -3,33 +3,33 @@
 const Features = () => {
   const Data = [
     {
-      title: "Streamlined Workflows",
+      title: "Increased Efficiency",
       description:
-        "Simplify complex processes by automating repetitive tasks and ensuring timely execution.",
+        "Automate repetitive tasks to free up valuable resources for strategic work.",
       style: "bg-[#f2f2f2]",
     },
     {
-      title: "Enhanced Efficiency",
+      title: "Improved Accuracy",
       description:
-        "Reduce manual intervention with automated scheduling and adhoc execution options.",
+        "Eliminate manual errors by enforcing rules and automating processes.",
       style: "bg-[#d6f5d6]",
     },
     {
-      title: "Flexibility and Control",
+      title: "Faster Turnaround Time",
       description:
-        "Customize job parameters and schedules to meet unique operational requirements.",
+        "Streamlined workflows ensure tasks are completed quickly and efficiently.",
       style: "bg-[#e6f7ff] lg:row-span-3 flex flex-col justify-center",
     },
     {
-      title: "Real-Time Monitoring",
+      title: "Enhanced Visibility",
       description:
-        "Gain insights into task execution with live status updates and detailed logs.",
+        "Real-time tracking and analytics provide complete transparency over process performance.",
       style: "bg-[#fff2cc]",
     },
     {
-      title: "Scalable and Secure",
+      title: "Scalable Solutions",
       description:
-        "Suitable for businesses of all sizes, with robust security features to protect sensitive operations.",
+        "Adapt workflows as your business grows or processes become more complex.",
       style: "bg-[#ffebcd]",
     },
   ];
@@ -38,7 +38,7 @@ const Features = () => {
     <section className=" bg-[#f8f9fa] pb-[100px] lg:px-[100px] px-5">
       <div className="">
         <h1 className="lg:text-[45px] text-[28px] font-raleway font-[600]">
-          Benefits of Using Our External API Connector
+          Benefits of Using Our Workflow Engine
         </h1>
       </div>
       <section className="mt-5">

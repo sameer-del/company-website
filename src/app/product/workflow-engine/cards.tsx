@@ -3,46 +3,76 @@
 const Cards = () => {
   const Data = [
     {
-      title: "User-Friendly Job Designer Screen",
+      title: "Visual Workflow Designer",
       description:
-        "Configure jobs effortlessly with an intuitive drag-and-drop interface. Define job parameters for various task types, including database procedures, class files, and API calls.",
+        "Build workflows using an intuitive drag-and-drop interface. Define tasks, conditions, and transitions without the need for complex coding.",
       number: "01",
     },
     {
-      title: "Flexible Scheduling Options",
+      title: "Dynamic Rule Integration",
       description:
-        "Schedule jobs to run at specific times or intervals (e.g., daily, weekly, or monthly). Configure complex schedules with custom recurrence patterns to match your operational needs.",
+        "Easily integrate business rules to dynamically route tasks or trigger actions. Supports real-time rule evaluation for decision-based workflows.",
       number: "02",
     },
     {
-      title: "Adhoc Execution",
+      title: "AI-Driven Optimization",
       description:
-        "Trigger jobs manually as needed, bypassing predefined schedules for on-demand flexibility. Ideal for urgent or one-time tasks requiring immediate attention.",
+        "AI-powered recommendations to optimize workflow efficiency and identify bottlenecks. Predictive analytics for forecasting workflow outcomes and resource allocation.",
       number: "03",
     },
     {
-      title: "Comprehensive Monitoring and Management",
+      title: "Multi-Step Process Automation",
       description:
-        "Track job execution statuses, including success, failure, and in-progress states. View detailed logs for troubleshooting and performance analysis.",
+        "Automate multi-step processes across teams, departments, or applications. Support for sequential, parallel, or conditional workflows based on business needs.",
       number: "04",
     },
     {
-      title: "Robust Notifications",
+      title: "Role-Based Access and Approvals",
       description:
-        "Receive email or SMS alerts for job completions, failures, or delays. Stay informed about critical tasks in real time.",
+        "Assign specific roles and permissions to ensure secure and efficient task execution. Integrate approval hierarchies for task validation before progression.",
       number: "05",
     },
     {
-      title: "Role-Based Access Control",
+      title: "Real-Time Monitoring and Dashboards",
       description:
-        "Define permissions for users, ensuring secure and restricted access to job configurations and schedules.",
+        "Monitor the status of workflows in real-time using intuitive dashboards. Gain actionable insights with key metrics like task completion rates, SLA adherence, and workflow duration.",
       number: "06",
     },
     {
-      title: "Audit Trails and Reporting",
+      title: "Event-Driven Triggers",
       description:
-        "Maintain a detailed history of job executions for compliance and performance tracking. Generate reports to analyze trends and optimize task management.",
+        "Automate task initiation based on specific events or triggers (e.g., new customer sign-up, order placed). Supports webhook and API-based triggers for seamless integration.",
       number: "07",
+    },
+    {
+      title: "Seamless Integration with Systems",
+      description:
+        "Connect your workflows with existing applications, databases, and services through REST APIs. Compatible with CRMs, ERPs, and third-party platforms for end-to-end process automation.",
+      number: "08",
+    },
+    {
+      title: "Scalability and High Performance",
+      description:
+        "Handle high-volume workflows efficiently with scalable architecture. Suitable for organizations of any size or complexity.",
+      number: "09",
+    },
+    {
+      title: "Version Control and Audit Trails",
+      description:
+        "Keep track of workflow updates with versioning to ensure seamless rollbacks. Maintain detailed logs of workflow execution for compliance and traceability.",
+      number: "10",
+    },
+    {
+      title: "SLA Management",
+      description:
+        "Set and track Service Level Agreements (SLAs) for tasks or processes. Automatic escalation for tasks nearing SLA breaches.",
+      number: "11",
+    },
+    {
+      title: "Notifications and Alerts",
+      description:
+        "Notify stakeholders of task assignments, escalations, or updates via email, SMS, or system notifications. Real-time alerts for delayed or failed tasks to ensure quick resolution.",
+      number: "12",
     },
   ];
 
@@ -50,7 +80,7 @@ const Cards = () => {
     <section className="px-5 py-[100px] lg:px-[100px] bg-[#f8f9fa]" id="more">
       <div className="">
         <h1 className="lg:text-[45px] text-[35px] font-raleway font-[600] capitalize">
-          Key Features of Our job designer
+          Key Features of Our Workflow Engine
         </h1>
         <p className="lg:text-[18px] font-raleway mt-2">
           key features and important points of our Product

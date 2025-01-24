@@ -8,24 +8,28 @@ const Howitworks = () => {
   const [heading, setHeading] = useState("");
   const Data = [
     {
-      title: "Job Configuration",
+      title: "Design Workflows",
       description:
-        "Define task parameters using the Job Designer interface. Specify the type of job (database procedure, class file, or API call).",
+        "Use the visual designer to define workflow tasks, transitions, and conditions.",
+      style: "bg-[#f2f2f2]",
     },
     {
-      title: "Schedule Creation",
+      title: "Configure Rules",
       description:
-        "Set up a schedule with precise timing and recurrence patterns. Use adhoc execution for urgent tasks.",
+        "Add business rules to automate task routing and decision-making.",
+      style: "bg-[#d6f5d6]",
     },
     {
-      title: "Monitoring and Notifications",
+      title: "Deploy and Monitor",
       description:
-        "Track job execution status and receive real-time alerts for completions or issues.",
+        "Execute workflows in real-time and track their progress using dashboards.",
+      style: "bg-[#e6f7ff] lg:row-span-3 flex flex-col justify-center",
     },
     {
-      title: "Analysis and Optimization",
+      title: "Analyze and Optimize",
       description:
-        "Use audit trails and reports to refine workflows and improve efficiency.",
+        "Review workflow performance and make data-driven adjustments for efficiency.",
+      style: "bg-[#fff2cc]",
     },
   ];
 

@@ -7,6 +7,8 @@ import Features from "./features";
 import Navbar from "@/app/components/Navbar";
 import HowCards from "./howCard";
 import Howitworks from "./howItWorks";
+import Benefits from "./benefit";
+import { BlurIn } from "@/app/components/hero-components/textanimation";
 
 const screenDesigner = () => {
   return (
@@ -14,15 +16,15 @@ const screenDesigner = () => {
       <Navbar />
       <header className="bg-[#ffffff]    ">
         <div className="lg:max-w-5xl lg:mx-auto text-center px-4 h-[70vh] flex flex-col items-center justify-center">
-          <h1 className="lg:text-[52px] text-[32px]  mb-4 font-[raleway] font-[700]">
-            Optimize Task Management with Our Job Designer and Scheduler
-          </h1>
+          <BlurIn className="lg:text-[52px] text-[32px]  mb-4 font-[raleway] font-[700]">
+            Streamline Processes with Our Advanced Workflow Engine
+          </BlurIn>
           <p className="lg:text-[17px] mb-6 font-[raleway]">
-            Design, Automate, and Control Your Workflow Our Job Designer and
-            Scheduler software empowers users to configure, automate, and manage
-            tasks effortlessly. With an intuitive interface and robust
-            scheduling capabilities, it simplifies the orchestration of critical
-            operations, ensuring precision and efficiency in task execution.
+            Optimize, automate, and monitor your business processes with our
+            Workflow Engine. Designed to increase operational efficiency and
+            reduce manual intervention, our Workflow Engine enables businesses
+            to define, execute, and track workflows across departments while
+            ensuring scalability and adaptability.
           </p>
           <Link href="#more">
             <button className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-black hover:border-black hover:border-[1px] duration-300 mt-5 w-[150px] bg-black py-4 rounded-full text-white font-serif ">
@@ -47,6 +49,7 @@ const screenDesigner = () => {
       <Features />
       {/* faetures section */}
       <HowCards />
+      <Benefits />
       <Howitworks />
 
       {/* Call to Action */}

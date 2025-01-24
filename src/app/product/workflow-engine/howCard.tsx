@@ -3,28 +3,34 @@
 const HowCards = () => {
   const Data = [
     {
-      title: "IT Teams",
+      title: "Loan Origination",
       description:
-        "Simplify database management, API integrations, and system maintenance tasks.",
+        "Automate application reviews, approvals, and document verification.",
       style: "bg-[#f2f2f2]",
     },
     {
-      title: "Operations Managers",
+      title: "Customer Support",
       description:
-        "Ensure business-critical processes are executed reliably and on time.",
+        "Streamline ticket assignment, escalation, and resolution workflows.",
       style: "bg-[#d6f5d6]",
     },
     {
-      title: "Developers",
+      title: "HR Processes",
       description:
-        "Automate testing, deployment, and other coding-related jobs.",
-      style: "bg-[#e6f7ff]",
+        "Manage employee onboarding, leave requests, and performance evaluations.",
+      style: "bg-[#e6f7ff] lg:row-span-3 flex flex-col justify-center",
     },
     {
-      title: "Data Analysts",
+      title: "E-Commerce",
       description:
-        "Schedule data extraction, transformation, and loading (ETL) processes effortlessly.",
+        "Automate order processing, inventory updates, and shipment tracking.",
       style: "bg-[#fff2cc]",
+    },
+    {
+      title: "Compliance and Audit",
+      description:
+        "Ensure consistent workflows for compliance checks and audits.",
+      style: "bg-[#ffebcd]",
     },
   ];
 
@@ -32,7 +38,7 @@ const HowCards = () => {
     <section className="bg-[#f8f9fa] pb-[100px] lg:px-[100px] px-5">
       <div className="pb-[50px]">
         <h1 className="lg:text-[45px] text-center text-[28px] font-raleway font-[600]">
-          KYC Vault: Secure, Efficient, and Trustworthy
+          Use Cases for Our Workflow Engine
         </h1>
       </div>
       <section className="">

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Suspense, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
+import { motion } from "motion/react";
 export default function navlinks() {
   const [heading, setHeading] = useState("");
   const links = [
@@ -13,6 +14,7 @@ export default function navlinks() {
         {
           sublink: [
             { name: "cooperate profile", link: "/about" },
+            { name: "who we are", link: "/about/why-choose-us" },
             { name: "new and events", link: "/about" },
             { name: "blog", link: "/about" },
             { name: "career", link: "/about/career" },
@@ -98,25 +100,31 @@ export default function navlinks() {
 
               {link.submenu && (
                 <div>
-                  <div className="absolute top-[4rem] duration-300  z-10 hidden group-hover:md:block hover:md:block ">
+                  <div className="absolute top-[4rem]    z-10 hidden group-hover:md:block hover:md:block ">
                     <div className="py-3">
                       <div className="w-4 h-4 left-[2.0rem] absolute mt-1 bg-black  rotate-45"></div>
                     </div>
                     <div className=" bg-black  p-5 w-[600px]  rounded-md shadow-slate-950">
                       {link.sublinks.map((mysublinks, index) => (
                         <ul
-                          className=" grid grid-cols-3 gap-8 text-white font-serif text-[18px] capitialize "
+                          className=" grid grid-cols-3 gap-8 text-white font-raleway text-[16px] capitialize "
                           key={index}
                         >
                           {mysublinks.sublink.map((slink, index) => (
-                            <li key={index} className="">
+                            <motion.li
+                              initial={{ opacity: 0 }}
+                              whileInView={{ opacity: 1 }}
+                              transition={{ duration: 1, ease: "easeInOut" }}
+                              key={index}
+                              className=""
+                            >
                               <Link
                                 href={slink.link}
                                 className=" hover:text-green-700 duration-150 "
                               >
                                 {slink.name}
                               </Link>
-                            </li>
+                            </motion.li>
                           ))}
                         </ul>
                       ))}
@@ -136,7 +144,9 @@ export default function navlinks() {
                           className="sm:hidden  pl-5 text-[19px] capitalize font-[secondary] font-bold border-b-2 py-2"
                           key={index}
                         >
-                          <Link href={slink.link}>{slink.name}</Link>
+                          <Link href={slink.link} className="font-raleway">
+                            {slink.name}
+                          </Link>
                         </h1>
                       ))}
                     </div>
